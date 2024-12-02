@@ -1,0 +1,20 @@
+[project]
+name = "generate_topics"
+version = "0.1.0"
+description = "generate_topics using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.83.0,<1.0.0"
+]
+
+[project.scripts]
+generate_topics = "generate_topics.main:run"
+run_crew = "generate_topics.main:run"
+train = "generate_topics.main:train"
+replay = "generate_topics.main:replay"
+test = "generate_topics.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

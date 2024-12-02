@@ -1,0 +1,37 @@
+OutlineAgent_task:
+  description: >
+    Create a structured outline for the content based on the {topic} and {description}.
+  expected_output: >
+    As an Outline Specialist, you focus on organizing ideas and 
+    key points effectively to lay the groundwork for compelling content.
+
+ContentGeneratorAgent_task:
+  description: >
+    Generate unique content for the topic {topic} incorporating the description {description} and optimizing it with {keywords}.
+    Ensure the content is engaging and suitable for blog or Facebook posts.
+  expected_output: >
+    Unique content for the topic {topic} that incorporates the description {description}
+    and uses the keywords {keywords} effectively for SEO.
+    The output should be suitable for posting on a blog or Facebook.
+
+ReconcileAgent_task:
+  description: >
+    Refine the generated content to enhance clarity, engagement, and SEO effectiveness using the keywords {keywords}.
+  expected_output: >
+    Refined content that improves upon the initial generation, making it friendly, easy to understand, and suitable for blog writing,
+    ensuring clarity and optimization for SEO with the keywords {keywords}.
+
+PlagiarismCheckerAgent_task:
+  description: >
+    Verify the refined content against existing online content to ensure it is not plagiarized.
+  expected_output: >
+    Confirmation of the originality of the content, indicating whether it is plagiarized or not.
+
+TranslationAgent_task:
+  description: >
+    Translate the refined content from English to Thai using Claud AI, while maintaining the original meaning and context.
+    Ensure the translation maintains the original meaning and is culturally appropriate.
+  expected_output: >
+    Translated blog content into Thai that maintains the meaning of the original English content
+    with personality and style of blog's voice that makes it unique and memorable,
+    making it friendly, easy to understand, and suitable for blog writing.
