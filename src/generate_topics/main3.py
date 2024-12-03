@@ -4,7 +4,7 @@ import warnings
 
 from generate_topics.crew import GenerateTopics,ContentWriter
 
-from pyairtable import Api
+# from pyairtable import Api
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 

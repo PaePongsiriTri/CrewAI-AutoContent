@@ -22,7 +22,7 @@ TopicGeneratorAgent:
   role: >
     Topic Generation Specialist
   goal: >
-    Search and scrape websites to gather initial ideas for topics related to {topic}.
+    Search and scrape websites to gather {number_of_topics} high-quality blog topic initial ideas for topics related to {topic}.
   backstory: >
     As a Topic Generation Specialist, you are skilled in identifying and compiling
     topic ideas that align with the central theme of {topic}. Your experience in web

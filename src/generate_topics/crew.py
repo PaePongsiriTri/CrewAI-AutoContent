@@ -8,7 +8,12 @@ from generate_topics.tools.custom_tool import TopicFormat,ListTopics
 # from crewai_tools import SerperDevTool
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, WebsiteSearchTool
 
-from pyairtable import Api
+gemini_llm = LLM(
+    model="gemini/gemini-pro",
+    temperature=0.7
+)
+
+# from pyairtable import Api
 
 anthropic_llm = "anthropic/claude-3-5-sonnet-20241022"
 
@@ -29,7 +34,7 @@ class GenerateTopics():
 		return Agent(
 			config=self.agents_config['TopicGeneratorAgent'],
 			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
-			# verbose=True,
+			verbose=True,
 			# llm=anthropic_llm
 		)
 
@@ -37,7 +42,7 @@ class GenerateTopics():
 	def ReconcileAgent(self) -> Agent:
 		return Agent(
 			config=self.agents_config['ReconcileAgent'],
-			# verbose=True,
+			verbose=True,
 			# llm=anthropic_llm
 		)
 
